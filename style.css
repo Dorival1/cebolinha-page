@@ -1,0 +1,252 @@
+html {
+  scroll-behavior: smooth;
+  
+}
+
+.navegacao{
+    position: fixed;
+    top: 0;
+    background-color: rgb(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: 100;
+    left: 0;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    padding: o.5rem 0;
+}
+
+body {
+  background-color: #f1f5f9; /* cinza azulado claro */
+}
+
+
+
+
+.dorival{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+.minha-foto img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgb(15, 23, 42, 0.8);
+    box-shadow: 0 25px 25px rgba(0,0,0,0.4);
+}
+
+
+.minha-foto{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.dese{
+    text-align: center;
+    color: rgb(15, 23, 42, 0.8);
+}
+
+.centro{
+    flex-direction: column;
+}
+
+#inicio{
+    height: 100vh;
+    scroll-margin-top: 80px;
+}
+
+.redes{
+    text-align: center;
+    gap: 9rem;
+    transition: box-shadow 0.3s ease;
+    
+}
+
+.redes img:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* sombra aparece no hover */
+} 
+
+
+.tudo-trasn{
+    opacity: 0;
+    transform: translate(-100px);
+    animation: slideInLeft 3s forwards;
+}
+
+@keyframes slideInLeft{
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.apresentacao{
+    display: flex;
+    background-color: rgb(15, 23, 42, 0.8);
+    border-radius: 9px;
+}
+
+.imagem-sobre{
+    width: 500px;
+    height: 550px;
+}
+
+#sobre{
+    height: 100vh;
+    scroll-margin-top: 80px;
+
+}
+
+
+
+.texto-apresentacao{
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    gap: 8rem;
+}
+
+#equipe{
+    height: 100vh;
+
+}
+
+#portfolio{
+    display: flex;             /* organiza os vídeos lado a lado */
+    flex-wrap: wrap;           /* quebra linha se não couber na tela */
+    gap: 20px;                 /* espaço entre os vídeos */
+    justify-content: center;   /* centraliza na tela */
+    padding: 50px;
+}
+
+.videos{
+    text-align: center;        /* centraliza título e descrição */
+    width: 320px;              /* largura do card */
+}
+
+.videos video{
+    width: 100%;               /* ocupa toda a largura do card */
+    border-radius: 8px;
+}
+
+.videos{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.videos:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.edits{
+    display: flex;              /* ativa flexbox */
+    flex-wrap: wrap;            /* permite quebrar linha */
+    justify-content: center;    /* centraliza horizontalmente */
+    gap: 20px;                  /* espaço entre os vídeos */
+    padding: 50px 20px;         /* espaço interno da seção */
+}
+
+.videos{
+    width: 30%;                 /* 3 vídeos por linha aproximadamente */
+    min-width: 250px;           /* garante que não fique muito pequeno em telas menores */
+    text-align: center;         /* centraliza título e vídeo */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.videos video{
+    width: 100%;                /* ocupa toda a largura do card */
+    border-radius: 8px;
+}
+
+/* título do vídeo */
+.videos h3{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.falecomigo{
+    background-color: #000;      /* fundo preto */
+    color: #fff;                 /* texto branco */
+    padding: 80px 20px;          /* espaço interno */
+    text-align: center;           /* centraliza todo o conteúdo */
+}
+
+.falecomigo h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.falecomigo p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.btn-fale{
+    display: inline-block;
+    background-color: #fff;      /* botão branco */
+    color: #000;                 /* texto preto */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-fale:hover{
+    background-color: #ff0000;   /* muda para vermelho ao passar o mouse */
+    color: #fff;
+}
+
+.footer{
+    background-color: rgb(15, 23, 42, 0.8);       /* fundo preto */
+    color: #fff;                  /* texto branco */
+    padding: 30px 20px;           /* espaçamento interno */
+    text-align: center;           /* centraliza conteúdo */
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p{
+    margin: 0 0 15px 0;
+    font-size: 14px;
+}
+
+.footer-redes a{
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.footer-redes a:hover img{
+    transform: scale(1.2);        /* efeito leve ao passar o mouse */
+    transition: 0.3s;
+}
